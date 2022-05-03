@@ -63,4 +63,32 @@ h1 {
 
 }
 
+.side-bar {
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#00545d, #000729);
+
+    /*  You use the positioning attributes top, left, 
+    bottom, and right to set the location. Remember that these values will be relative to the next parent element with relative (or absolute) positioning. 
+    If there is no such parent, it will default all the way back up to the <html> element itself meaning it will be placed relative to the page itself. */
+
+    position: absolute;
+    right:0 ;
+    top: 0;
+}
+.menu {
+    /* using display block because we are using a img element and changing it to a block-level element */
+
+    display: block;
+    width: 25px;
+
+    /* using auto to horizontally center the element within its container. */
+
+    margin: 40px auto 0;
+
+    /* cursor pointer makes the cursor change on icon */
+
+    cursor:pointer;
+}
+
 
