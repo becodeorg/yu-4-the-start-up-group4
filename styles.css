@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    
 }
 
 /* Hero class */
@@ -12,6 +13,12 @@
     width: 100%;
     height: 100vh;
     background-image: url(images/background.png);
+       
+    /* PARALAX effect */
+        background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
 
     /* background-size: cover covers the whole page */
     
@@ -22,7 +29,10 @@
     /* With the hidden value, the overflow is clipped, and the rest of the content is hidden:  */
 
     overflow: hidden;
+    
 }
+
+
 
 /* logo class */
 
@@ -53,6 +63,18 @@ button {
     outline: none;
     cursor: pointer;
 }
+
+.banner1 {
+    color: #fbfcfd;
+    postion: sticky;
+    z-index: 1;
+    font-size: 50px;
+    text-align: center;
+    transform: translateY(-50%);
+    line-height: 80px;
+}
+
+
 
 /* content class */
 
@@ -93,6 +115,7 @@ h1 {
     background-position:center;
     position:relative;
     overflow: hidden;
+    
 }
 
 /* main class */
@@ -104,6 +127,7 @@ h1 {
     top: 50%;
     right: 8%
     z-index: 1;
+    
 }
 
 /* header 2 */
@@ -253,4 +277,39 @@ h2 {
     animation-delay: 7s;
 }
 
+.main {
+    display: inline-block;
+    animation: fadeIn linear 7s;
+    -webkit-animation: fadeIn linear 7s;
+    -moz-animation: fadeIn linear 7s;
+    -o-animation: fadeIn linear 7s;
+    -ms-animation: fadeIn linear 7s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
 {
+    
