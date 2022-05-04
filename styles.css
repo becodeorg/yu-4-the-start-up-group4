@@ -1,5 +1,3 @@
-/* * adds css to all elements */
-
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +5,11 @@
     
 }
 
-/* Hero class */
-
 .hero {
     width: 100%;
     height: 100vh;
     background-image: url(images/background.png);
+<<<<<<< HEAD
        
     /* PARALAX effect */
         background-attachment: fixed;
@@ -22,26 +19,26 @@
 
     /* background-size: cover covers the whole page */
     
+=======
+>>>>>>> 2222c20b5a16e5d6d970889245724157b0914290
     background-size: cover;
     background-position:center;
     position:relative;
-
-    /* With the hidden value, the overflow is clipped, and the rest of the content is hidden:  */
-
     overflow: hidden;
     
 }
 
+<<<<<<< HEAD
 
 
 /* logo class */
 
+=======
+>>>>>>> 2222c20b5a16e5d6d970889245724157b0914290
 .logo {
     width: 250px;
     cursor: pointer;
 }
-
-/* navbar class */
 
 .navbar {
         width: 85%;
@@ -51,8 +48,6 @@
         align-items: center;
         justify-content: space-between;
 }
-
-/* Button */
 
 button {
     color: #fbfcfd;
@@ -64,6 +59,7 @@ button {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .banner1 {
     color: #fbfcfd;
     postion: sticky;
@@ -78,6 +74,8 @@ button {
 
 /* content class */
 
+=======
+>>>>>>> 2222c20b5a16e5d6d970889245724157b0914290
 .content {
 
     color: #fbfcfd;
@@ -95,8 +93,6 @@ button {
     z-index: 2;
 }
 
-/* Header 1 */
-
 h1 {
     font-size: 80px;
     margin: 10px O 30px;
@@ -105,6 +101,7 @@ h1 {
 
 }
 
+<<<<<<< HEAD
 /* master class */
 
 .master {
@@ -146,6 +143,8 @@ h2 {
 /* side-bar class */
 
 
+=======
+>>>>>>> 2222c20b5a16e5d6d970889245724157b0914290
 .side-bar {
     width: 50px;
     height: 100vh;
@@ -159,9 +158,6 @@ h2 {
     right:0 ;
     top: 0;
 }
-
-/* menu class */
-
 .menu {
     /* using display block because we are using a img element and changing it to a block-level element */
 
@@ -177,17 +173,11 @@ h2 {
     cursor:pointer;
 }
 
-
-/* social-links img class & useful-links img class */
-
 .social-links img, .useful-links img {
         width: 25px;
         margin: 5px auto;
         cursor: pointer;
 }
-
-/* social-links class */
-
 
 .social-links {
     width: 50px;
@@ -197,9 +187,6 @@ h2 {
     transform: translateY(-50%);
 }
 
-/* useful-links class */
-
-
 .useful-links {
     width: 50px;
     text-align: center;
@@ -207,17 +194,11 @@ h2 {
     bottom: 30px;
 }
 
-/* bubbles img class & animation */
-
-
 .bubbles img {
     width: 50px;
     animation: bubble 7s linear infinite;
 
 }
-
-/* bubbles class & styling */
-
 .bubbles {
     width: 100%;
     display: flex;
@@ -227,8 +208,6 @@ h2 {
     /* bottom element makes sure the bubbles start in the right position */
     bottom: -70px;
 }
-
-/* keyframes bubble CSS at-rule controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. */
 
 @keyframes bubble{
     0% {
@@ -275,6 +254,7 @@ h2 {
 .bubbles img:nth-child(7) {
     width: 35px;
     animation-delay: 7s;
+<<<<<<< HEAD
 }
 
 .main {
@@ -313,3 +293,6 @@ h2 {
 
 {
     
+=======
+}
+>>>>>>> 2222c20b5a16e5d6d970889245724157b0914290
