@@ -4,8 +4,61 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:#0A173A;
     
 }
+.logo1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing:5px;
+    font-size:22px;
+    background-color:#0A173A;
+}
+
+.nav-links {
+    display:flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li {
+    list-style: none;
+
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:14px;
+}
+
+.burger {
+    display: none;
+    
+}
+
+
+.burger div {
+    width: 25px;
+    height: 1px;
+    background-color: white;
+    margin: 5px;
+}
+
+
+
+
+
+
+
 
 /* Hero class */
 
@@ -50,7 +103,10 @@
         display:flex;
         align-items: center;
         justify-content: space-between;
+        
+
 }
+
 
 /* Button */
 
@@ -62,6 +118,9 @@ button {
     border-radius: 20px;
     outline: none;
     cursor: pointer;
+    position: relative;
+    postion: fixed;
+    z-index:4;
 }
 
 .banner1 {
@@ -277,6 +336,8 @@ h2 {
     animation-delay: 7s;
 }
 
+/* fade in animation */
+
 .main {
     display: inline-block;
     animation: fadeIn linear 7s;
@@ -285,6 +346,8 @@ h2 {
     -o-animation: fadeIn linear 7s;
     -ms-animation: fadeIn linear 7s;
   }
+
+  /* fade in animation */
   
   @keyframes fadeIn {
     0% {opacity:0;}
