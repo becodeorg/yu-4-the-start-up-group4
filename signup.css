@@ -167,6 +167,33 @@ textarea {
   background-color:#000729;
 }
 
+footer {
+    
+    background-color: #0A173A;
+}
+
+.contact {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 25vh;
+    background-color: #0A173A;
+    background-size: cover;
+    background-position:center;
+    position:relative;
+    overflow: hidden;
+}
+
+.contact1 {
+    text-align: center;
+    justify-content: center;
+    color: #fbfcfd;
+    position: relative;
+    top: 40%;
+    right: 8%
+    z-index: 1;
+}
+
 @media screen and (max-width: 880px) {
   .contact-box {
     grid-template-columns: 1fr;
