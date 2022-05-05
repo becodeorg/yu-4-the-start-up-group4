@@ -125,7 +125,8 @@ button a {
     color: #fbfcfd;
     position: absolute;
     top: 50%;
-    left: 8%;
+    left: 50%;
+    padding-right: 100px;
 
     /* transform centers the element */
 
@@ -140,11 +141,20 @@ button a {
 /* Header 1 */
 
 h1 {
-    font-size: 80px;
+    font-size: 50px;
     margin: 10px O 30px;
     /* line-height:horizontal spacing between header text */
     line-height: 80px;
+    text-align: right;
+    text-align: center;
+    
 
+}
+
+small {
+    padding-left: 420px;
+    font-size: 30px;
+    
 }
 
 /* master class */
@@ -220,6 +230,7 @@ h2 {
 
     cursor:pointer;
 }
+
 
 
 .bubbles img {
@@ -334,11 +345,22 @@ footer {
     margin-bottom:150px;
 } */
 
+.location {
+    color: #fbfcfd;
+    position: relative;
+    z-index: 1;
+    bottom: 53%;
+    left: 22%;
+    font-size: 20px;
+}
+
+
 .map {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom:150px;
     margin-right: 100px;
     border-radius: 2000px;
+    padding-left: 200px;
 }
 
 @keyframes fade {
