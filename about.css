@@ -1,0 +1,403 @@
+/* * adds css to all elements */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html {
+        scroll-behavior: smooth;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    background-color:#0A173A;
+    
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.nav-links li {
+    list-style: none;
+    justify-content: center;
+
+}
+.nav-links a {
+    color: #fbfcfd;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:14px;
+}
+
+/* Hero class */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+       
+    /* PARALAX effect */
+        background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+    /* background-size: cover covers the whole page */
+    
+    background-size: cover;
+    background-position:center;
+    position:relative;
+
+    /* With the hidden value, the overflow is clipped, and the rest of the content is hidden:  */
+
+    overflow: hidden;
+    
+}
+
+
+
+/* logo class */
+
+.logo {
+    width: 250px;
+    cursor: pointer;
+}
+
+/* navbar class */
+
+.navbar {
+        width: 85%;
+        height: 15%;
+        margin:auto;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+}
+
+/* Button */
+
+button {
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    postion: fixed;
+    z-index:4;
+}
+
+button a {
+    text-decoration: none;
+    color: #fbfcfd;
+}
+
+.banner1 {
+    color: #fbfcfd;
+    postion: sticky;
+    z-index: 1;
+    font-size: 50px;
+    text-align: center;
+    transform: translateY(-50%);
+    line-height: 80px;
+}
+
+
+
+/* content class */
+
+.content {
+
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+
+    /* transform centers the element */
+
+    transform: translateY(-50%);
+
+    /* Z Index (z-index) is a CSS property that defines the order of overlapping HTML elements.
+     Elements with a higher index will be placed on top of elements with a lower index.*/
+     
+    z-index: 2;
+}
+
+/* Header 1 */
+
+h1 {
+    font-size: 80px;
+    margin: 10px O 30px;
+    /* line-height:horizontal spacing between header text */
+    line-height: 80px;
+
+}
+
+/* master class */
+
+.master {
+    width: 100%;
+    height: 100vh;
+    background-color: #0A173A;
+    background-size: cover;
+    background-position:center;
+    position:relative;
+    overflow: hidden;
+    
+}
+
+.contact {
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        height: 25vh;
+        background-color: #0A173A;
+        background-size: cover;
+        background-position:center;
+        position:relative;
+        overflow: hidden;
+}
+
+
+
+p a{
+    text-decoration: none;
+    color: #fbfcfd;
+
+}
+
+/* main class */
+
+.main{
+    text-align: center;
+    justify-content: center;
+    color: #fbfcfd;
+    position: relative;
+    top: 40%;
+    z-index: 1;
+    
+}
+
+/* header 2 */
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: auto 200px;
+
+    /* line-height:horizontal spacing between header text */
+
+    line-height: 60px;
+}
+
+/* menu class */
+
+.menu {
+    /* using display block because we are using a img element and changing it to a block-level element */
+
+    display: block;
+    width: 25px;
+
+    /* using auto to horizontally center the element within its container. */
+
+    margin: 40px auto 0;
+
+    /* cursor pointer makes the cursor change on icon */
+
+    cursor:pointer;
+}
+
+
+.bubbles img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+
+}
+
+/* bubbles class & styling */
+
+.bubbles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    /* bottom element makes sure the bubbles start in the right position */
+    bottom: -70px;
+}
+
+/* keyframes bubble CSS at-rule controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. */
+
+@keyframes bubble{
+    0% {
+        transform: translateY(0); 
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-80vh); 
+        opacity: 0;
+    }
+}
+
+/* The :nth-child selector allows you to select one or more elements based on their source order, according to a formula. */
+
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 3s;
+    width: 25px;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(6) {
+    width: 20px;
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(7) {
+    width: 35px;
+    animation-delay: 7s;
+}
+
+/* fade in animation */
+
+.main-animation {
+    animation: fadeIn linear 5s;
+    -webkit-animation: fadeIn linear 5s;
+    -moz-animation: fadeIn linear 5s;
+    -o-animation: fadeIn linear 5s;
+    -ms-animation: fadeIn linear 5s;
+}
+
+  * {box-sizing:border-box}
+
+footer {
+    
+    background-color: #0A173A;
+}
+
+.contact {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 25vh;
+    background-color: #0A173A;
+    background-size: cover;
+    background-position:center;
+    position:relative;
+    overflow: hidden;
+}
+
+.contact1 {
+    text-align: center;
+    justify-content: center;
+    color: #fbfcfd;
+    position: relative;
+    top: 30%;
+    right: 8%
+    z-index: 1;
+}
+
+/* .contact {
+  
+    margin-top: 300px;
+    margin-bottom:150px;
+} */
+
+.map {
+    margin-top: 300px;
+    margin-bottom:150px;
+    margin-right: 100px;
+    border-radius: 2000px;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+  /* fade in animation */
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+@media screen and (max-width: 1024px) {
+    .nav-links  {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        
+    }
+    .nav-links {
+        postion: absolute;
+        right: 0px;
+        height:5vh;
+        top: 8vh;
+        background-color: #0A173A;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+
+    }
+}
+
+
+
+    
