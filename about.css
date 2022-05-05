@@ -356,11 +356,11 @@ footer {
 
 
 .map {
-    margin-top: 200px;
-    margin-bottom:150px;
-    margin-right: 100px;
-    border-radius: 2000px;
-    padding-left: 200px;
+margin-top: 20rem;
+    margin-bottom:15rem;
+    margin-right: 10rem;
+    border-radius: ;
+    padding-left: 20rem;
 }
 
 @keyframes fade {
