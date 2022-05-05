@@ -170,6 +170,7 @@ textarea {
 footer {
     
     background-color: #0A173A;
+    border-radius: 0;
 }
 
 .contact {
