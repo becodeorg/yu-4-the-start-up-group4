@@ -36,20 +36,6 @@ nav {
     font-size:14px;
 }
 
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fbfcfd;
-    margin: 5px;
-}
-
-
 /* Hero class */
 
 .hero {
@@ -96,7 +82,6 @@ nav {
         
 
 }
-
 
 /* Button */
 
@@ -191,24 +176,6 @@ h2 {
     line-height: 60px;
 }
 
-
-/* side-bar class */
-
-
-.side-bar {
-    width: 50px;
-    height: 100vh;
-    background: linear-gradient(#00545d, #000729);
-
-    /*  You use the positioning attributes top, left, 
-    bottom, and right to set the location. Remember that these values will be relative to the next parent element with relative (or absolute) positioning. 
-    If there is no such parent, it will default all the way back up to the <html> element itself meaning it will be placed relative to the page itself. */
-
-    position: absolute;
-    right:0 ;
-    top: 0;
-}
-
 /* menu class */
 
 .menu {
@@ -229,32 +196,32 @@ h2 {
 
 /* social-links img class & useful-links img class */
 
-.social-links img, .useful-links img {
+/* .social-links img, .useful-links img {
         width: 25px;
         margin: 5px auto;
         cursor: pointer;
-}
+} */
 
 /* social-links class */
 
 
-.social-links {
+/* .social-links {
     width: 50px;
     text-align: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 
 /* useful-links class */
 
 
-.useful-links {
+/* .useful-links {
     width: 50px;
     text-align: center;
     position: absolute;
     bottom: 30px;
-}
+} */
 
 /* bubbles img class & animation */
 
@@ -335,11 +302,6 @@ h2 {
     -o-animation: fadeIn linear 5s;
     -ms-animation: fadeIn linear 5s;
 }
-
-.main {
-    /* display: inline-block; */
-  }
-
 
   * {box-sizing:border-box}
 

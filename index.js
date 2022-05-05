@@ -1,3 +1,5 @@
+// THIS IS THE REVEAL SCRIPT FOR MAIN ON INDEX.HTML
+
 function reveal() {
     var reveals = document.querySelectorAll(".main");
     for (var i = 0; i < reveals.length; i++) {
@@ -11,6 +13,24 @@ function reveal() {
       }
     }
   }
+
+// THIS IS THE REVEAL SCRIPT FOR ABOUT.HTML
+
+// function reveal() {
+//     var reveals = document.querySelectorAll(".");
+//     for (var i = 0; i < reveals.length; i++) {
+//       var windowHeight = window.innerHeight;
+//       var elementTop = reveals[i].getBoundingClientRect().top;
+//       var elementVisible = 10;
+//       if (elementTop < windowHeight - elementVisible) {
+//         reveals[i].classList.add("main-animation");
+//       } else {
+//         reveals[i].classList.remove("main-animation");
+//       }
+//     }
+//   }
+
+// THIS IS THE SLIDESHOW ON THE INDEX PAGE
 
   window.addEventListener("scroll", reveal);
 
