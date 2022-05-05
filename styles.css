@@ -6,6 +6,9 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+html {
+        scroll-behavior: smooth;
+  }
 
 nav {
     display: flex;
@@ -336,7 +339,7 @@ h2 {
   height: 100vh;
   position: relative;
   bottom: 0;
-
+  background-color: #0A173A
 }
 
 /* Hide the images by default */
