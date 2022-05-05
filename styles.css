@@ -156,9 +156,10 @@ h1 {
 
 .main{
     text-align: center;
+    justify-content: center;
     color: #fbfcfd;
     position: relative;
-    top: 50%;
+    top: 40%;
     right: 8%
     z-index: 1;
     
