@@ -98,6 +98,11 @@ button {
     z-index:4;
 }
 
+button a {
+    text-decoration: none;
+    color: #fbfcfd;
+}
+
 .banner1 {
     color: #fbfcfd;
     postion: sticky;
@@ -164,9 +169,7 @@ h1 {
         overflow: hidden;
 }
 
-.contact1 {
-    height: 25vh;
-}
+
 
 p a{
     text-decoration: none;
@@ -396,7 +399,7 @@ footer {
     justify-content: center;
     color: #fbfcfd;
     position: relative;
-    top: 40%;
+    top: 30%;
     right: 8%
     z-index: 1;
 }
